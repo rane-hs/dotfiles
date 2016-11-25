@@ -5,8 +5,10 @@ function fish_prompt
     set_color green
     echo -n ' '(whoami)'@'(hostname)
     set_color yellow
-    echo -n ':'(prompt_pwd)' {'"$git_branch"'}'
+    echo -n ':'(prompt_pwd)
+    set_color purple
+    echo -n ' {'"$git_branch"'}'
     set_color normal
-    printf '\n> '
+    printf '\nミ(((°> '
 end
 
