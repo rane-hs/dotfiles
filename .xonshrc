@@ -1,0 +1,14 @@
+
+# load initial
+xontrib load vox
+
+# xonsh variables
+
+$PROMPT = '{env_name:{} }{BOLD_GREEN}{user}@{hostname}{BOLD_BLUE} {cwd}{NO_COLOR} {BOLD_BLUE}{prompt_end}{NO_COLOR}\nﾐ(((@> '
+$RIGHT_PROMPT = '{branch_color}{curr_branch: {}}{NO_COLOR}'
+$SHELL_TYPE = 'prompt_toolkit'
+$VIRTUALENV_HOME = '/path/to/venvs'
+
+# set aliases
+#aliases['source'] = source_from_files 
+aliases['ll'] = 'ls -l'
