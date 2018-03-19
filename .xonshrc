@@ -1,6 +1,8 @@
 
 # load initial
 xontrib load vox
+xontrib load autoxsh
+
 
 # xonsh variables
 
@@ -10,5 +12,9 @@ $SHELL_TYPE = 'prompt_toolkit'
 $VIRTUALENV_HOME = '/path/to/venvs'
 
 # set aliases
-#aliases['source'] = source_from_files 
+#aliases['source'] = source_from_files
+aliases['u'] = 'cd ../'
+aliases['l'] = 'ls'
 aliases['ll'] = 'ls -l'
+aliases['la'] = 'ls -a'
+aliases['lla'] = 'ls -la'
