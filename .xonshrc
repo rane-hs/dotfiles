@@ -8,7 +8,9 @@ xontrib load autoxsh
 
 $PROMPT = '{BOLD_GREEN}{user}@{hostname}{BOLD_BLUE} {cwd}{NO_COLOR} {BOLD_BLUE}{prompt_end}{NO_COLOR}\nﾐ(((@> '
 $RIGHT_PROMPT = '{env_name:{} }{branch_color}{curr_branch: {}}{NO_COLOR}'
+# prompt_toolkit break layouts with some env(ex: MSYS2 + ssh + xonsh) if use readline, layout not broken
 $SHELL_TYPE = 'prompt_toolkit'
+# $SHELL_TYPE = 'readline'
 $VIRTUALENV_HOME = '/path/to/venvs'
 
 # set aliases
