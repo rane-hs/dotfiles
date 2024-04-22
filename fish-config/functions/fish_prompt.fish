@@ -6,9 +6,12 @@ function fish_prompt
     echo -n ' '(whoami)'@'(hostname)
     set_color yellow
     echo -n ':'(prompt_pwd)
-    set_color purple
-    echo -n (__git_ps1)
+
+    # Git
+    set_color cyan
+    set last_status $status
+    printf '%s ' (__fish_git_prompt)
+
     set_color normal
     printf '\nミ(((°> '
 end
-
